@@ -43,8 +43,7 @@ class CustomCell: UITableViewCell {
     }
     
     @IBAction func infoButtonPressed(_ sender: UIButton) {
-        
-        UIView.transition(with: popUpView2, duration: 0.5, options: .transitionFlipFromTop, animations: {
+        UIView.transition(with: popUpView2, duration: 0.5, options: .transitionFlipFromRight, animations: {
             self.popUpView2.alpha = 1
         }, completion: nil)
     }
@@ -53,9 +52,14 @@ class CustomCell: UITableViewCell {
     @IBAction func hideButton(_ sender: UIButton) {
         
         UIView.animate(withDuration: 0.5, animations: {
+//                self.popUpView1.frame.origin.x += self.view.bounds.width
+
             self.popUpView1.alpha = 1
 //            self.popUpView2.frame.origin.x = self.frame.width
+            self.popUpView2.frame.origin.x += self.superview!.frame.width
             self.popUpView2.alpha = 0
-        }, completion: nil)
+        }, completion: {(action) in
+            self.popUpView2.frame.origin.x = 0
+        })
     }
 }

@@ -16,7 +16,7 @@ class HomePage: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.3) {
         self.emailTextField.center.x += self.view.bounds.width
         self.passwordTextField.center.x -= self.view.bounds.width
         self.nextButton.backgroundColor = UIColor.init(colorLiteralRed: 4, green: 4, blue: 4, alpha: 0.1)
@@ -52,11 +52,7 @@ class HomePage: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let buttonCell = storyboard.instantiateViewController(withIdentifier: "Tables") as! Tables
-                self.navigationController?.pushViewController(buttonCell, animated: true)
-                performSegue(withIdentifier: "idHomeSegue", sender: self)
+            performSegue(withIdentifier: "idHomeSegue", sender: self)
     }
     
     override func awakeFromNib() {
