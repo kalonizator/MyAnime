@@ -156,7 +156,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-Gx-Kv0">
-                                                            <rect key="frame" x="8" y="28" width="42" height="15"/>
+                                                            <rect key="frame" x="8" y="24" width="42" height="19"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -181,7 +181,7 @@
                                                         <constraint firstItem="s7c-1x-O7O" firstAttribute="leading" secondItem="GOp-Z0-KUg" secondAttribute="leadingMargin" id="MeV-o0-EVM"/>
                                                         <constraint firstItem="s7c-1x-O7O" firstAttribute="top" secondItem="GOp-Z0-KUg" secondAttribute="top" id="QLC-p5-ti9"/>
                                                         <constraint firstAttribute="bottom" secondItem="Kfa-Gx-Kv0" secondAttribute="bottom" id="SOd-Yq-myC"/>
-                                                        <constraint firstItem="Kfa-Gx-Kv0" firstAttribute="top" secondItem="s7c-1x-O7O" secondAttribute="bottom" constant="13" id="TzT-4R-AsH"/>
+                                                        <constraint firstItem="Kfa-Gx-Kv0" firstAttribute="top" secondItem="s7c-1x-O7O" secondAttribute="bottom" constant="9" id="TzT-4R-AsH"/>
                                                         <constraint firstItem="I9l-s4-8RP" firstAttribute="trailing" secondItem="GOp-Z0-KUg" secondAttribute="trailingMargin" id="ft0-Ch-kIF"/>
                                                         <constraint firstItem="I9l-s4-8RP" firstAttribute="centerY" secondItem="GOp-Z0-KUg" secondAttribute="centerY" id="iIx-iz-tsb"/>
                                                         <constraint firstItem="s7c-1x-O7O" firstAttribute="leading" secondItem="Kfa-Gx-Kv0" secondAttribute="leading" id="tLR-6n-c8y"/>

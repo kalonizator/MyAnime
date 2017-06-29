@@ -76,7 +76,6 @@ class Tables: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         cell.firstLabel.text = self.phones_name[indexPath.row]
         cell.secondLabel.text = self.phones_price[indexPath.row]
-        
         cell.thirdLabel.text = self.phones_fInfo[indexPath.row]
         cell.fourthLabel.text = self.phones_sInfo[indexPath.row]
         
@@ -84,6 +83,11 @@ class Tables: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 55;//Choose your custom row height
     }
     
     
