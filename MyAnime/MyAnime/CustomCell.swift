@@ -53,7 +53,9 @@ class CustomCell: UITableViewCell {
     @IBAction func hideButton(_ sender: UIButton) {
         
         UIView.animate(withDuration: 0.5, animations: {
-            self.popUpView2.frame.origin.x = self.frame.width
+            self.popUpView1.alpha = 1
+//            self.popUpView2.frame.origin.x = self.frame.width
+            self.popUpView2.alpha = 0
         }, completion: nil)
     }
 }
